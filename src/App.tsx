@@ -121,6 +121,96 @@ const PROMPTS: Prompt[] = [
     difficulty: "Fundamental",
     content: "Crie uma página institucional para uma empresa de consultoria em IA. O design deve equilibrar seriedade e inovação. Use azul marinho como cor base e tons de prata para os detalhes. Implemente uma seção de 'Processo' usando um Stepper animado. O Hero deve conter uma animação de texto tipo 'typing' que demonstra as capacidades da consultoria. Garanta que o tempo de carregamento seja otimizado e que as fontes carreguem instantaneamente.",
   },
+  {
+    id: "apple-vision-style",
+    title: "Página Estilo Apple Vision",
+    description: "Visual imersivo com profundidade visual e efeitos de vidro avançados.",
+    category: "UI/UX Avançado",
+    tags: ["#Spatial", "#Glass", "#VisionPro"],
+    difficulty: "Avançado",
+    content: "Aja como um Senior UX Designer na Apple. Crie uma interface de 'Computação Espacial' usando React e Tailwind. Use um fundo de gradiente dinâmico que se move sutilmente. Os cards devem ser 'Glassmorphic' com reflexos internos e bordas de 1px ultra-brilhantes. Ao passar o mouse, o card deve ter um efeito de 'hover 3D' seguindo o cursor. Tipografia: San Francisco (ou Inter) com pesos variados para criar profundidade. Inclua ícones que parecem flutuar em diferentes camadas de Z-index.",
+  },
+  {
+    id: "cyberpunk-lp",
+    title: "Landing Page Cyberpunk 2077",
+    description: "Design futurista com cores neon vibrantes, glitches e estética industrial.",
+    category: "Landing Page",
+    tags: ["#Cyberpunk", "#Neon", "#Glitch"],
+    difficulty: "Intermediário",
+    content: "Crie uma página de destino com estética Cyberpunk. As cores dominantes devem ser Amarelo Canário (#FCEE09), Azul Ciano e Rosa Magenta. Adicione efeitos de 'Glitch' sutis no texto do Hero. Utilize fontes angulares e industriais. Inclua uma grade de fundo simulando um HUD de ficção científica. Os botões devem ter animações de 'flicker' (piscar) e bordas recortadas. Use SVG patterns para texturas de ruído e linhas de scan line.",
+  },
+  {
+    id: "luxury-watch-ecommerce",
+    title: "E-commerce de Relógios de Luxo",
+    description: "Layout de prestígio focado em detalhes macro e tipografia serifada.",
+    category: "E-commerce",
+    tags: ["#Luxury", "#Fashion", "#Ecom"],
+    difficulty: "Avançado",
+    content: "Desenvolva uma vitrine para relógios de luxo. Use uma combinação de tipografia Serifada (Playfair Display) para títulos e Sans-serif (Inter) para corpo. O fundo deve ser um 'Champagne' muito leve ou 'Off-white'. Use animações de 'Mask Reveal' para as imagens dos produtos ao rolar a página. O carrinho de compras deve ser um painel lateral elegante com transições suaves. Foque em micro-interações: ao passar o mouse na foto, o zoom deve ser suave e cinematográfico.",
+  },
+  {
+    id: "arch-portfolio-minimal",
+    title: "Portfólio de Arquitetura Minimal",
+    description: "Pureza geométrica e foco em fotografia de alta qualidade.",
+    category: "Minimalista",
+    tags: ["#Architecture", "#Pure", "#NegativeSpace"],
+    difficulty: "Fundamental",
+    content: "Crie um portfólio para um estúdio de arquitetura. O layout deve ser baseado em uma grade rígida de 12 colunas, mas com uso massivo de espaços vazios. Use apenas tons de cinza e branco. As transições entre projetos devem ser uma cortina de cor sólida que sobe e desce. As legendas das fotos devem ser pequenas e em fonte mono, alinhadas às bordas da tela. O menu de navegação deve ser um 'Hamburguer' que expande para uma tela cheia minimalista.",
+  },
+  {
+    id: "threejs-wave-terrain",
+    title: "Terreno de Ondas 3D",
+    description: "Fundo animado com ondas de fios (wireframe) reagindo ao mouse.",
+    category: "3D / Three.js",
+    tags: ["#ThreeJS", "#Math", "#Interactive"],
+    difficulty: "Avançado",
+    content: "Aja como um desenvolvedor Creative Technologist. Crie um componente Three.js que renderiza um terreno infinito de ondas em wireframe. Use um Vertex Shader para animar as ondas com ruído de Perlin. O usuário deve ser capaz de rotacionar a câmera levemente ao mover o mouse. As linhas do wireframe devem brilhar em azul neon sobre um fundo preto profundo. Adicione um efeito de névoa (fog) para dar profundidade ao horizonte 3D.",
+  },
+  {
+    id: "horizontal-storytelling",
+    title: "Storytelling de Scroll Horizontal",
+    description: "Uma experiência cinematográfica que se move lateralmente.",
+    category: "Parallax",
+    tags: ["#HorizontalScroll", "#Cinema", "#Modern"],
+    difficulty: "Intermediário",
+    content: "Implemente um site que utiliza todo o conteúdo em scroll horizontal. Use a biblioteca 'Framer Motion' para interceptar o scroll vertical e transformá-lo em movimento no eixo X. Cada seção deve ocupar 100% da largura da tela (100vw). Adicione um indicador de progresso na parte inferior. O design deve ser rico em tipografia grande que 'atravessa' as seções durante a transição, criando um efeito de continuidade visual única.",
+  },
+  {
+    id: "fintech-enterprise-app",
+    title: "Dashboard Fintech Enterprise",
+    description: "Interface complexa de dados financeiros com clareza absoluta.",
+    category: "Empresarial",
+    tags: ["#Fintech", "#Data", "#SaaS"],
+    difficulty: "Avançado",
+    content: "Crie uma interface de analytics para uma plataforma de pagamentos. O foco é densidade de informação com legibilidade. Use tabelas customizadas com estados de 'sorting' e 'filtering' animados. Inclua pequenos gráficos de faísca (sparklines) em cada linha de dados. A paleta de cores deve ser profissional: azul petróleo escuro para a barra lateral e cinzas frios para o conteúdo principal. O sistema de notificações deve ser discreto mas funcional (estilo toast).",
+  },
+  {
+    id: "creative-agency-2026",
+    title: "Agência Criativa Avant-Garde",
+    description: "Brutalismo moderno misturado com elegância tech.",
+    category: "Landing Page",
+    tags: ["#Brutalism", "#Agency", "#Bold"],
+    difficulty: "Intermediário",
+    content: "Aja como um diretor de arte premiado. Crie a landing page de uma agência criativa. Use tipografia 'Sans-serif' pesada e extra-bold. Implemente um 'Custom Cursor' que muda de forma ao passar por links. O layout deve ignorar as grades convencionais, com textos sobrepostos e elementos flutuantes. Inclua uma seção 'Work' onde os projetos aparecem em um carrossel vertical infinito. Cores: Laranja vibrante e Cinza Chumbo.",
+  },
+  {
+    id: "glass-dashboard-ux",
+    title: "Dashboard de Vidro Interativo",
+    description: "Explora o ápice do design Glassmorphism com interações complexas.",
+    category: "UI/UX Avançado",
+    tags: ["#Glassmorphism", "#Interactive", "#UX"],
+    difficulty: "Avançado",
+    content: "Desenvolva um dashboard de 'Smart Home' altamente tátil. Cada controle (slider de iluminação, termostato) deve parecer feito de vidro fosco com iluminação interna. Ao interagir com um slider, a cor de fundo do dashboard deve mudar dinamicamente para refletir o estado do dispositivo. Use sombras suaves de 2 níveis para dar profundidade. Adicione sons de feedback tátil (opcional nas instruções) e animações suaves de 'spring' em todas as interações. O design deve ser relaxante e luxuoso.",
+  },
+  {
+    id: "bento-product-launch",
+    title: "Lançamento de Produto (Bento Grid)",
+    description: "Apresentação modular estilo Apple ou Stripe para novos hardwares/softwares.",
+    category: "Landing Page",
+    tags: ["#Bento", "#Launch", "#Marketing"],
+    difficulty: "Intermediário",
+    content: "Projete uma página de anúncio para um novo smartphone. Use a técnica de 'Bento Grid' para exibir fotos de hardware, especificações técnicas e recursos de software em quadrados de tamanhos variados. Cada 'box' do bento deve ter sua própria animação de entrada com atrasos incrementais. Inclua uma seção de 'Especificações' que se expande ao clicar. A tipografia deve ser limpa (Outfit ou Inter) e a paleta de cores deve ser baseada no acabamento do produto (ex: Titânio ou Grafite).",
+  },
 ];
 
 // Components
@@ -234,13 +324,14 @@ interface PromptCardProps {
   onOpen: (p: Prompt) => void;
 }
 
-const PromptCard: React.FC<PromptCardProps> = ({ prompt, onOpen }) => {
+const PromptCard: React.FC<PromptCardProps & { onCopy: () => void }> = ({ prompt, onOpen, onCopy }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = (e: React.MouseEvent) => {
     e.stopPropagation();
     navigator.clipboard.writeText(prompt.content);
     setCopied(true);
+    onCopy();
     setTimeout(() => setCopied(false), 2000);
   };
 
@@ -318,12 +409,13 @@ const PromptCard: React.FC<PromptCardProps> = ({ prompt, onOpen }) => {
   );
 };
 
-const Modal = ({ prompt, onClose }: { prompt: Prompt; onClose: () => void }) => {
+const Modal = ({ prompt, onClose, onCopy }: { prompt: Prompt; onClose: () => void; onCopy: () => void }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(prompt.content);
     setCopied(true);
+    onCopy();
     setTimeout(() => setCopied(false), 2000);
   };
 
@@ -484,10 +576,52 @@ const Footer = () => (
   </footer>
 );
 
+const OfferCard = ({ onClose }: { onClose: () => void }) => (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9, y: 50 }}
+    animate={{ opacity: 1, scale: 1, y: 0 }}
+    exit={{ opacity: 0, scale: 0.9, y: 50 }}
+    className="fixed bottom-8 right-8 z-[100] w-full max-w-sm bg-[#0F0F0F] border border-emerald-500/30 rounded-3xl p-6 shadow-2xl shadow-emerald-500/10 overflow-hidden"
+  >
+    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-cyan-500" />
+    <button 
+      onClick={onClose}
+      className="absolute top-4 right-4 p-1 rounded-full bg-white/5 text-gray-400 hover:text-white"
+    >
+      <X size={16} />
+    </button>
+    <div className="space-y-4">
+      <div className="flex items-center gap-2 text-emerald-400 font-bold text-[10px] uppercase tracking-[0.2em]">
+        <Sparkles size={14} />
+        Oportunidade Única
+      </div>
+      <h3 className="text-xl font-bold text-white italic uppercase tracking-tighter">
+        Transforme em <span className="text-emerald-400">Mini SaaS</span>
+      </h3>
+      <p className="text-sm text-gray-400 leading-relaxed">
+        Não apenas crie sites. Aprenda a desenvolver um Mini SaaS lucrativo do zero com nosso método exclusivo.
+      </p>
+      <a 
+        href="https://crie-site.onrender.com/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="block w-full py-3 bg-emerald-500 text-black text-center font-black rounded-xl hover:bg-emerald-400 transition-all active:scale-95 uppercase tracking-tighter text-sm"
+      >
+        Aprender Agora
+      </a>
+    </div>
+  </motion.div>
+);
+
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedPrompt, setSelectedPrompt] = useState<Prompt | null>(null);
+  const [showOffer, setShowOffer] = useState(false);
+
+  const handleCopyAction = () => {
+    setShowOffer(true);
+  };
 
   const filteredPrompts = useMemo(() => {
     return PROMPTS.filter(p => {
@@ -534,7 +668,7 @@ export default function App() {
             >
               <AnimatePresence mode="popLayout">
                 {filteredPrompts.map((prompt) => (
-                  <PromptCard key={prompt.id} prompt={prompt} onOpen={setSelectedPrompt} />
+                  <PromptCard key={prompt.id} prompt={prompt} onOpen={setSelectedPrompt} onCopy={handleCopyAction} />
                 ))}
               </AnimatePresence>
             </motion.div>
@@ -588,7 +722,13 @@ export default function App() {
 
       <AnimatePresence>
         {selectedPrompt && (
-          <Modal prompt={selectedPrompt} onClose={() => setSelectedPrompt(null)} />
+          <Modal prompt={selectedPrompt} onClose={() => setSelectedPrompt(null)} onCopy={handleCopyAction} />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {showOffer && (
+          <OfferCard onClose={() => setShowOffer(false)} />
         )}
       </AnimatePresence>
 
