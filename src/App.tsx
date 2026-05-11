@@ -578,37 +578,65 @@ const Footer = () => (
 
 const OfferCard = ({ onClose }: { onClose: () => void }) => (
   <motion.div
-    initial={{ opacity: 0, scale: 0.9, y: 50 }}
-    animate={{ opacity: 1, scale: 1, y: 0 }}
-    exit={{ opacity: 0, scale: 0.9, y: 50 }}
-    className="fixed bottom-8 right-8 z-[100] w-full max-w-sm bg-[#0F0F0F] border border-emerald-500/30 rounded-3xl p-6 shadow-2xl shadow-emerald-500/10 overflow-hidden"
+    initial={{ opacity: 0, scale: 0.8, y: 100, rotate: -5 }}
+    animate={{ opacity: 1, scale: 1, y: 0, rotate: 0 }}
+    exit={{ opacity: 0, scale: 0.8, y: 100 }}
+    transition={{ type: "spring", damping: 15, stiffness: 200 }}
+    className="fixed bottom-6 right-6 z-[100] w-full max-w-[380px] group"
   >
-    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-cyan-500" />
-    <button 
-      onClick={onClose}
-      className="absolute top-4 right-4 p-1 rounded-full bg-white/5 text-gray-400 hover:text-white"
-    >
-      <X size={16} />
-    </button>
-    <div className="space-y-4">
-      <div className="flex items-center gap-2 text-emerald-400 font-bold text-[10px] uppercase tracking-[0.2em]">
-        <Sparkles size={14} />
-        Oportunidade Única
-      </div>
-      <h3 className="text-xl font-bold text-white italic uppercase tracking-tighter">
-        Transforme em <span className="text-emerald-400">Mini SaaS</span>
-      </h3>
-      <p className="text-sm text-gray-400 leading-relaxed">
-        Não apenas crie sites. Aprenda a desenvolver um Mini SaaS lucrativo do zero com nosso método exclusivo.
-      </p>
-      <a 
-        href="https://crie-site.onrender.com/" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="block w-full py-3 bg-emerald-500 text-black text-center font-black rounded-xl hover:bg-emerald-400 transition-all active:scale-95 uppercase tracking-tighter text-sm"
+    {/* Animated Border Glow */}
+    <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 via-cyan-500 to-emerald-500 rounded-[30px] blur opacity-75 group-hover:opacity-100 animate-tilt transition duration-1000 group-hover:duration-200"></div>
+    
+    <div className="relative bg-white rounded-[28px] p-8 shadow-2xl overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100 rounded-full -mr-16 -mt-16 blur-3xl opacity-50" />
+      
+      <button 
+        onClick={onClose}
+        className="absolute top-5 right-5 p-2 rounded-full bg-gray-100 text-gray-400 hover:text-black hover:bg-gray-200 transition-all z-10"
       >
-        Aprender Agora
-      </a>
+        <X size={18} />
+      </button>
+
+      <div className="relative z-10 space-y-5">
+        <div className="flex items-center gap-2">
+          <div className="flex -space-x-2">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-gray-200 overflow-hidden">
+                <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i + 10}`} alt="User" />
+              </div>
+            ))}
+          </div>
+          <span className="text-[10px] font-black text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded-md">
+            +1.2k Alunos
+          </span>
+        </div>
+
+        <div className="space-y-2">
+          <h3 className="text-2xl font-black text-gray-900 leading-tight tracking-tight uppercase italic">
+            Não apenas <span className="text-emerald-500">copie</span>,<br/>
+            aprenda a <span className="bg-emerald-500 text-white px-2">lucrar!</span>
+          </h3>
+          <p className="text-gray-600 text-sm font-medium leading-relaxed">
+            Descubra como João Layon transforma esses prompts em <span className="font-bold text-black">Mini SaaS que faturam no automático.</span>
+          </p>
+        </div>
+
+        <div className="pt-2">
+          <a 
+            href="https://crie-site.onrender.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 w-full py-4 bg-black text-white font-black rounded-2xl hover:bg-emerald-500 hover:text-black transition-all active:scale-95 uppercase tracking-wider text-sm shadow-xl shadow-black/10 group/btn"
+          >
+            Começar Meu Império
+            <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+          <p className="text-[9px] text-center text-gray-400 mt-4 font-bold uppercase tracking-widest">
+            Acesso imediato à estratégia DS Company
+          </p>
+        </div>
+      </div>
     </div>
   </motion.div>
 );
@@ -740,6 +768,14 @@ export default function App() {
         @keyframes gradient-x {
           0%, 100% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
+        }
+        @keyframes tilt {
+          0%, 50%, 100% { transform: rotate(0deg); }
+          25% { transform: rotate(1deg); }
+          75% { transform: rotate(-1deg); }
+        }
+        .animate-tilt {
+          animation: tilt 10s infinite linear;
         }
         .custom-scrollbar::-webkit-scrollbar {
           width: 6px;
