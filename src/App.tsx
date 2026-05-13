@@ -614,26 +614,26 @@ const OfferCard = ({ onClose }: { onClose: () => void }) => (
 
         <div className="space-y-2">
           <h3 className="text-2xl font-black text-gray-900 leading-tight tracking-tight uppercase italic">
-            Não apenas <span className="text-emerald-500">copie</span>,<br/>
-            aprenda a <span className="bg-emerald-500 text-white px-2">lucrar!</span>
+            Crie Páginas <span className="text-emerald-500">Profissionais</span> e<br/>
+            hospede <span className="bg-emerald-500 text-white px-2">Grátis!</span>
           </h3>
           <p className="text-gray-600 text-sm font-medium leading-relaxed">
-            Descubra como João Layon transforma esses prompts em <span className="font-bold text-black">Mini SaaS que faturam no automático.</span>
+            Aprenda o passo a passo para transformar esses prompts em <span className="font-bold text-black">sites reais, hospedados online sem qualquer custo.</span>
           </p>
         </div>
 
         <div className="pt-2">
           <a 
-            href="https://crie-site.onrender.com/" 
+            href="https://seusite-ai-lp.vercel.app/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 w-full py-4 bg-black text-white font-black rounded-2xl hover:bg-emerald-500 hover:text-black transition-all active:scale-95 uppercase tracking-wider text-sm shadow-xl shadow-black/10 group/btn"
           >
-            Começar Meu Império
+            Aprender Agora
             <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <p className="text-[9px] text-center text-gray-400 mt-4 font-bold uppercase tracking-widest">
-            Acesso imediato à estratégia DS Company
+            Estratégia exclusiva DS Company
           </p>
         </div>
       </div>
